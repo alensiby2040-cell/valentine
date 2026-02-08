@@ -5,84 +5,120 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+<div id="ending-screen">
+  <div class="ending-text">
+    <p>You chose me.</p>
+    <p>And I’ll keep choosing you.</p>
+    <p>Every single day.</p>
+  </div>
+</div>
+<audio id="bg-music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
 <body>
 
+<!-- FIRST SECTION -->
 <div id="question">
   <center>
     <h1>Will you be my Valentine? ❤️</h1>
 
-    <button id="yes">Yes</button>
-    <button id="no">No</button>
+    <div class="button-area">
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </div>
+
     <p id="message"></p>
   </center>
 </div>
 
-<div class="letter">
+<!-- LOVE LETTER SECTION (HIDDEN INITIALLY) -->
+<div id="love" style="display: none;">
 
-  <div class="row">
-    <p>
-      Vava, enik ninne bayankara istam anedi. I really love you.
-    </p>
-    <img src="images/us.jpg" alt="Us">
-  </div>
+  <div class="letter">
 
-  <div class="row reverse">
-    <p>
-      Adyam onnum ilarn tease cheyd cheyd njn thanne veenu.
-      Ippo ninne kanand enik pattuniledi.
-      Ninte koode irikumba entho oru nice feel anu.
-    </p>
-    <img src="images/us1.jpg" alt="Moment">
-  </div>
+    <div class="row cinematic">
+      <p>
+        Vava, enik ninne bayankara istam anedi. I really love you.
+      </p>
+      <img src="images/us.jpg" alt="Us">
+    </div>
 
-  <div class="row">
-    <p>
-      Njan valland samsarikm enn enik ariya.
-      I know u tolerate me a lot.
-    </p>
-    <img src="images/us2.jpg" alt="Memory">
-  </div>
+    <div class="row reverse cinematic">
+      <p>
+        Adyam onnum ilarn tease cheyd cheyd njn thanne veenu.
+        Ippo ninne kanand enik pattuniledi.
+        Ninte koode irikumba entho oru nice feel anu.
+      </p>
+      <img src="images/us1.jpg" alt="Moment">
+    </div>
 
-  <div class="row reverse">
-    <p>
-      I fell for your innocence, Vava.
-      Enik ninne kanumba kanumba pidich oru kiss tharan thonnm.
-      But time ayila…
-    </p>
-    <img src="images/us3.jpg" alt="Smile">
-  </div>
+    <div class="row cinematic">
+      <p>
+        Njan valland samsarikm enn enik ariya.
+        I know u tolerate me a lot. Anyway, you are stuck with me.
+        Ninne kanand oru day polm irikathiledi, seriously.
+      </p>
+      <img src="images/us2.jpg" alt="Memory">
+    </div>
 
-  <div class="row">
-    <p>
-      I’ll be waiting for the day u tell me
-      <strong>“I Love You too.”</strong>
-    </p>
-    <img src="images/us4.jpg" alt="Together">
-  </div>
+    <div class="row reverse cinematic">
+      <p>
+        I fell for your innocence, Vava.
+        Enik ninne kanumba kanumba pidich oru kiss tharan thonnm.
+        But time ayila…
+      </p>
+      <img src="images/us3.jpg" alt="Smile">
+    </div>
 
-  <div class="row reverse">
-    <p>
-      Nalla cringe adikunondakm enn enik ariya.
-      But bear with me for a moment.
-    </p>
-    <img src="images/us6.jpg" alt="Forever">
-  </div>
+    <div class="row cinematic">
+      <p>
+        I still remember the day u told me
+        <strong>
+          “I Love You too.”
+           </strong>
+          The first time u called me
+           </strong> 
+           "BABY"
+           </strong>.
+          U don't know how happy I felt.
+        
+      </p>
+      <img src="images/us4.jpg" alt="Together">
+    </div>
 
-  <p class="final-question">
+    <div class="row reverse cinematic">
+      <p>
+        Nalla cringe adikunondakm enn enik ariya.
+        But bear with me for a moment. BTW aa Nandini ne ang ignore cheyde
+      </p>
+      <img src="images/us6.jpg" alt="Forever">
+    </div>
+
     <div class="neha">
-  <p><span>N</span> — No one makes me feel the way you do.</p>
-  <p><span>E</span> — Every moment with you feels special.</p>
-  <p><span>H</span> — Home is wherever you are.</p>
-  <p><span>A</span> — Always, it’s you.</p>
-</div>
+      <p><span>N</span> — No one makes me feel the way you do.</p>
+      <p><span>E</span> — Every moment with you feels special.</p>
+      <p><span>H</span> — Home is wherever you are.</p>
+      <p><span>A</span> — Always, it’s you.</p>
+    </div>
 
-    So Vava, will u be my Valentine? ❤️
-  </p>
+  </div>
+
+  <!-- FINAL SECTION -->
+  <div class="final-section">
+    <h2>So Vava… will u be my Valentine? ❤️</h2>
+
+    <div class="button-area">
+      <button id="final-yes">Yes</button>
+      <button id="final-no">No</button>
+    </div>
+
+    <p id="final-message"></p>
+  </div>
 
 </div>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
